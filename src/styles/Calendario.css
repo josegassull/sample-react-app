@@ -1,0 +1,65 @@
+.calendario-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f8f7;
+  border-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  font-size: 1rem;
+  color: #1e405c;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.calendario {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.descripcion {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.flatpickr-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+  color: #495057;
+  text-align: center;
+}
+
+.flatpickr-input:focus {
+  border-color: #00a896;
+  outline: none;
+}
+
+.flatpickr-day.today {
+  background-color: #00a896 !important;
+  color: #fff !important;
+}
+
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover,
+.flatpickr-day.selected:focus {
+  background-color: #1e405c !important;
+  color: #fff !important;
+}
+
+.flatpickr-day:hover {
+  background-color: #d4f1f4 !important;
+  color: #333;
+}

@@ -1,0 +1,86 @@
+/* Navbar general */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #162C29;
+  padding: 10px;
+  border-bottom: 3px solid #ffe26e;
+}
+
+/* Logo - ocupa 25% */
+.nav-logo {
+  flex: 1;
+  max-width: 25%;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Botón de menú */
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  padding-right: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Elementos de navegación en pantallas grandes */
+.nav-items {
+  flex: 3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: #a28f43;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    width: calc(100%); /* Más ancho y con margen a la derecha */
+    
+    background-color: #162C29;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .nav-items.open {
+    display: flex;
+  }
+
+  .nav-item {
+    font-size: 18px;
+    margin: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-item {
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 8px 16px;
+  }
+}
